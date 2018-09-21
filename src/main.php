@@ -20,7 +20,7 @@ class Main extends PluginBase{
 
             case "heal":
                 if($sender instanceof Player){
-			if($sender->hasPermission("heal.command")){
+			if($sender->hasPermission("heal.cmd")){
 				$sender->setHealth(20);
 				$sender->sendMessage("You have been healed!");
 			}
